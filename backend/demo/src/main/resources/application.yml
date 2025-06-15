@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/big_event?useSSL=false&serverTimezone=UTC
+    username: Evan
+    password: Haizeiwang123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mybatis:
+    configuration:
+      map-underscore-to-camel-case: true

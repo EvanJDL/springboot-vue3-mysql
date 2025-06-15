@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Poetry of Spring",
+    "category": "Poetry",
+    "publishTime": "2024-03-01",
+    "status": "published"
+  },
+  {
+    "title": "Dreams in the Wind",
+    "category": "Classic",
+    "publishTime": "2023-08-15",
+    "status": "draft"
+  },
+  {
+    "title": "Echoes of the Night",
+    "category": "Modern",
+    "publishTime": "2022-11-09",
+    "status": "published"
+  }
+]
