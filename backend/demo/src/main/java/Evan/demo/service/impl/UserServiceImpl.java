@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -86,7 +85,6 @@ public class UserServiceImpl implements UserService {
 
     public Result<String> updatePwd(UpdatePasswordDTO dto){
         Integer userId = UserHolder.getUserId();
-        String username = UserHolder.getUsername();
         String newPassword = dto.getNewPassword();
         String oldPassword = dto.getOldPassword();
         String rePassword = dto.getRePassword();

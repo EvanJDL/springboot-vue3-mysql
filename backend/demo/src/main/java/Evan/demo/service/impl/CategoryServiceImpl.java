@@ -1,7 +1,6 @@
 package Evan.demo.service.impl;
 
 import Evan.demo.mapper.CategoryMapper;
-import Evan.demo.pojo.UpdateCategoryDTO;
 import Evan.demo.pojo.Category;
 import Evan.demo.pojo.Result;
 import Evan.demo.service.CategoryService;
