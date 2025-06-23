@@ -1,15 +1,13 @@
 package Evan.demo.controller;
 
 import Evan.demo.pojo.Result;
+import Evan.demo.pojo.UpdatePasswordDTO;
 import Evan.demo.pojo.User;
 import Evan.demo.service.UserService;
-import Evan.demo.utils.UserHolder;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
@@ -51,7 +49,7 @@ public class UserController{
     }
 
     @PutMapping("/update")
-    public Result<String> updateUserInfo(@RequestBody User user){
+    public Result<String> updateUserInfo(@RequestBody @Validated User user){
         return userService.updateUser(user);
 //        boolean success = userService.updateUser(user);
 //        return success ? Result.success(null, "Success") : Result.fail("Update failed");
@@ -69,6 +67,8 @@ public class UserController{
         return success ? Result.success() : Result.fail("fail");
     }
 
-
-
+    @PatchMapping("/updatePwd")
+    public Result<String> updatePwd(@RequestBody UpdatePasswordDTO dto) {
+        return userService.updatePwd(dto);
+    }
 }

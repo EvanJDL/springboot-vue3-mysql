@@ -2,6 +2,7 @@ package Evan.demo.service.impl;
 
 import Evan.demo.mapper.UserMapper;
 import Evan.demo.pojo.Result;
+import Evan.demo.pojo.UpdatePasswordDTO;
 import Evan.demo.pojo.User;
 import Evan.demo.service.UserService;
 //import Evan.demo.utils.PasswordUtil;
@@ -81,5 +82,41 @@ public class UserServiceImpl implements UserService {
 
         user.setPassword(null);
         return Result.success("Success", user);
+    }
+
+    public Result<String> updatePwd(UpdatePasswordDTO dto){
+        Integer userId = UserHolder.getUserId();
+        String username = UserHolder.getUsername();
+        String newPassword = dto.getNewPassword();
+        String oldPassword = dto.getOldPassword();
+        String rePassword = dto.getRePassword();
+
+        String currentPassword = userMapper.findById(userId).getPassword();
+
+        if(oldPassword == null || oldPassword.trim().isEmpty()) {
+            return Result.fail("please enter correct oldPassword");
+        }
+
+        if(rePassword == null || rePassword.trim().isEmpty()){
+            return Result.fail("please enter correct rePassword");
+        }
+
+        if(newPassword == null || newPassword.trim().isEmpty()) {
+            return Result.fail("please enter correct newPassword");
+        }
+
+        if(!newPassword.equals(rePassword)){
+            return Result.fail("newPassword does not match");
+        }
+
+        if(!oldPassword.equals(currentPassword)){
+            return Result.fail("oldPassword is incorrect");
+        }
+        int rows = userMapper.updatePassword(userId, newPassword);
+        if (rows > 0) {
+            return Result.success();
+        } else {
+            return Result.fail("Password update failed");
+        }
     }
 }

@@ -1,6 +1,7 @@
 package Evan.demo.service;
 
 import Evan.demo.pojo.Result;
+import Evan.demo.pojo.UpdatePasswordDTO;
 import Evan.demo.pojo.User;
 
 public interface UserService{
@@ -13,6 +14,8 @@ public interface UserService{
     boolean updateAvatar(String avatarUrl);
 
     Result<User> getUserInfo();
+
+    Result<String> updatePwd(UpdatePasswordDTO dto);
 }
 
 

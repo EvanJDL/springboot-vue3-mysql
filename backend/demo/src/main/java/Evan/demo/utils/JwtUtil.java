@@ -1,5 +1,6 @@
 package Evan.demo.utils;
 
+import Evan.demo.pojo.Claims;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -41,5 +42,4 @@ public class JwtUtil {
 
         return new Claims(id, username);
     }
-
 }
