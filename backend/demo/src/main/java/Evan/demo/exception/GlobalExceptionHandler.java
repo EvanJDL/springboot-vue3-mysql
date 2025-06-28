@@ -1,6 +1,6 @@
 package Evan.demo.exception;
 
-import Evan.demo.pojo.Result;
+import Evan.demo.pojo.entity.Result;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

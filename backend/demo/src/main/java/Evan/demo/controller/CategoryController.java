@@ -1,7 +1,7 @@
 package Evan.demo.controller;
 
-import Evan.demo.pojo.Category;
-import Evan.demo.pojo.Result;
+import Evan.demo.pojo.entity.Category;
+import Evan.demo.pojo.entity.Result;
 import Evan.demo.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
-
     @Autowired
     private  CategoryService categoryService;
     @PostMapping
@@ -35,5 +34,4 @@ public class CategoryController {
     public Result<Category> deleteCategory(@RequestParam Integer id) {
         return categoryService.deleteCategory(id);
     }
-
 }

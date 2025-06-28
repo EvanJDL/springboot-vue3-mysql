@@ -1,6 +1,6 @@
 package Evan.demo.mapper;
 
-import Evan.demo.pojo.User;
+import Evan.demo.pojo.entity.User;
 import org.apache.ibatis.annotations.*;
 
 @Mapper

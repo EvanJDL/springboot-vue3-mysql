@@ -1,4 +1,4 @@
-package Evan.demo.pojo;
+package Evan.demo.pojo.entity;
 
 
 import lombok.AllArgsConstructor;

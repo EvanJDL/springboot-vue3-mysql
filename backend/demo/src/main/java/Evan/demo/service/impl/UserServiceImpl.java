@@ -1,9 +1,9 @@
 package Evan.demo.service.impl;
 
 import Evan.demo.mapper.UserMapper;
-import Evan.demo.pojo.Result;
-import Evan.demo.pojo.UpdatePasswordDTO;
-import Evan.demo.pojo.User;
+import Evan.demo.pojo.entity.Result;
+import Evan.demo.pojo.dto.UpdatePasswordDTO;
+import Evan.demo.pojo.entity.User;
 import Evan.demo.service.UserService;
 //import Evan.demo.utils.PasswordUtil;
 import Evan.demo.utils.JwtUtil;

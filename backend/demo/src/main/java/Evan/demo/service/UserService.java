@@ -1,8 +1,8 @@
 package Evan.demo.service;
 
-import Evan.demo.pojo.Result;
-import Evan.demo.pojo.UpdatePasswordDTO;
-import Evan.demo.pojo.User;
+import Evan.demo.pojo.entity.Result;
+import Evan.demo.pojo.dto.UpdatePasswordDTO;
+import Evan.demo.pojo.entity.User;
 
 public interface UserService{
     Result<String> register(String username, String password);

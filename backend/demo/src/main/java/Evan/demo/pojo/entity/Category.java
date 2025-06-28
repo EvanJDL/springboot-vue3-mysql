@@ -1,4 +1,4 @@
-package Evan.demo.pojo;
+package Evan.demo.pojo.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;

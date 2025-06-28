@@ -1,6 +1,6 @@
 package Evan.demo.interceptors;
 
-import Evan.demo.pojo.Claims;
+import Evan.demo.pojo.entity.Claims;
 import Evan.demo.utils.JwtUtil;
 import Evan.demo.utils.UserHolder;
 import com.auth0.jwt.exceptions.JWTVerificationException;

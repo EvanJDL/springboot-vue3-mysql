@@ -1,8 +1,8 @@
 package Evan.demo.controller;
 
-import Evan.demo.pojo.Result;
-import Evan.demo.pojo.UpdatePasswordDTO;
-import Evan.demo.pojo.User;
+import Evan.demo.pojo.entity.Result;
+import Evan.demo.pojo.dto.UpdatePasswordDTO;
+import Evan.demo.pojo.entity.User;
 import Evan.demo.service.UserService;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.beans.factory.annotation.Autowired;

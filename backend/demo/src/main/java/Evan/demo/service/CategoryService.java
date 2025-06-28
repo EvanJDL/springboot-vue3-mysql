@@ -1,7 +1,7 @@
 package Evan.demo.service;
 
-import Evan.demo.pojo.Category;
-import Evan.demo.pojo.Result;
+import Evan.demo.pojo.entity.Category;
+import Evan.demo.pojo.entity.Result;
 
 import java.util.List;
 

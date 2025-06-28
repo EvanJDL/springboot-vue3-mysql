@@ -1,4 +1,4 @@
-package Evan.demo;
+package Evan.demo.config;
 
 import Evan.demo.interceptors.LoginInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,16 @@ public class WebConfig implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 .excludePathPatterns(
                         "/user/login",
-                        "/user/register"
+                        "/user/register",
+                        "/uploads/**"
                 );
     }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/uploads/**")
+                .addResourceLocations("file:C:/Users/frank/Desktop/web_develop/");
+    }
+
+
 }

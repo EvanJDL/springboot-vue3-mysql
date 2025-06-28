@@ -1,4 +1,4 @@
-package Evan.demo.pojo;
+package Evan.demo.pojo.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
