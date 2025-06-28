@@ -5,8 +5,6 @@ import Evan.demo.pojo.entity.Article;
 import Evan.demo.pojo.entity.PageResult;
 import Evan.demo.pojo.entity.Result;
 
-import java.util.List;
-
 public interface ArticleService {
     Result<Article> insert(Article article);
 

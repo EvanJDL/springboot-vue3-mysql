@@ -1,7 +1,6 @@
 package Evan.demo.mapper;
 
 import Evan.demo.pojo.entity.Article;
-import Evan.demo.pojo.entity.Result;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
